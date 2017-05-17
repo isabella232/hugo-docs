@@ -307,7 +307,7 @@ function eraseCookie(name) {
 
     var startTime;
     $.post({
-      url: window.DGRAPH_ENDPOINT,
+      url: "https://play.dgraph.io/query?latency=true",
       data: query,
       dataType: "json",
       beforeSend: function() {
